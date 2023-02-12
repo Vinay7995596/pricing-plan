@@ -1,0 +1,388 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  border: 0px;
+}
+
+
+.main-bg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar {
+  height: 75px;
+  width: auto;
+}
+
+.nav-bar-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: aqua;
+  text-align: center;
+}
+
+.nav-bar-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2px;
+  height: 50px;
+  width: auto;
+}
+
+.message-container {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 20vh;
+}
+
+.nav-bar-return-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 12vh;
+}
+
+.return-heading {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.paragraph {
+  color: #000;
+  font-size: 15px;
+}
+
+.superior-text {
+  color: #000;
+  font-size: 10px;
+}
+
+.box-container {
+  height: 300px;
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1px;
+  transition: 0.5s;
+}
+
+.box-container:hover {
+  transform: scale(1.1);
+  color: blue;
+  z-index: 1;
+}
+
+.Features-heading::before {
+  content: '';
+  height: 1px;
+  width: 20vw;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  z-index: -1;
+}
+
+.Features-heading::after {
+  content: '';
+  height: 1px;
+  width: 20vw;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  z-index: -1;
+}
+
+.Features-heading {
+  color: #000;
+  font-size: 10px;
+  font-weight: normal;
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.span-heading {
+  background-color: white;
+  padding: 5px;
+}
+
+.card-features-heading {
+  color: #000;
+  font-size: 10px;
+}
+
+.key-features-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.button-continer {
+  border: 0px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width:577px) {
+  .main-bg-container {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+
+.return-button-home {
+  border: 0px;
+  background-color: white;
+
+}
+
+.main-container-second-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.main-heading-customize {
+  color: #000;
+  font-size: 35px;
+}
+
+.main-bg-container-second-container {
+  height: auto;
+  padding: 10px;
+  width: 300px;
+  background-size: cover;
+  border: 2px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: Slide_Left 1s ease;
+}
+
+.main-heading {
+  color: blue;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 2px;
+  margin: 2px;
+}
+
+.paragraph {
+  color: grey;
+  font-size: 15px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.small-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: -10px;
+}
+
+.small-headings {
+  color: #000;
+  font-size: 13px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.button-element {
+  background-color: blue;
+  border-radius: 30px;
+  border: 0px;
+  margin: 20px;
+  height: 10vh;
+  width: 30vh;
+  animation: Slide_Left 1s ease;
+}
+
+.butto-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  padding: 0px;
+}
+
+.button-heading {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sup-heading {
+  font-size: 10px;
+}
+
+@keyframes Slide_Left {
+  0% {
+      transform: translateX(250px);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.image-heading-container {
+  margin: 10px;
+  padding: 20px;
+}
+
+.image {
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.date-start-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+  height: 30px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.start-paragraph {
+  font-size: 15px;
+  color: #555;
+  margin: 10px;
+}
+
+.date-container {
+  height: 30px;
+  width: 100px;
+  border: 0px;
+  align-items: center;
+}
+
+.date-deductable-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-bar-second-page {
+  height: 75px;
+  width: auto;
+  background-color: whitesmoke;
+  border: 0px;
+}
+
+.nav-bar-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: aqua;
+  text-align: center;
+}
+
+.nav-bar-container-second-page {
+  height: 75px;
+  width: auto;
+}
+
+.message-container {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 20vh;
+}
+
+.nav-bar-return-container-second-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 12vh;
+}
+
+.return-heading {
+  font-size: 8px;
+  font-weight: normal;
+}
+
+
+.icons-plus-minus-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.logos-plus-minus {
+  height: 15px;
+  width: 15px;
+  text-align: center;
+
+}
+
+.plus-button {
+  background-color: green;
+  border: 0px;
+  border-radius: 5px;
+  height: 20px;
+  text-align: center;
+}
+
+.minus-button {
+  background-color: red;
+  border: 0px;
+  border-radius: 5px;
+  height: 20px;
+}
